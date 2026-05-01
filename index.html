@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmaa Elsayed — UI/UX Designer</title>
+    <meta name="description"
+        content="Asmaa Elsayed is a UI/UX Designer crafting clear, useful, and enjoyable digital experiences.">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Google Fonts: Space Grotesk + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+     NAVBAR — Floating pill navbar centered at top
+     ============================================================ -->
+    <header class="site-header">
+        <nav class="pill-nav" role="navigation" aria-label="Main navigation">
+            <a href="#home" class="nav-link-item" id="nav-home">Home</a>
+            <a href="#projects" class="nav-link-item" id="nav-resume">Projects</a>
+            <a href="#contact" class="nav-link-item" id="nav-contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- ============================================================
+     HERO — Full viewport, centered text, floating stickers
+     ============================================================ -->
+    <section class="hero-section" id="home" aria-label="Hero introduction">
+
+        <!-- Floating sticker images — absolutely positioned around the hero -->
+        <div class="floating-stickers" aria-hidden="true">
+            <!-- Avatar -->
+            <div class="sticker sticker-1" style="--rot: -6deg; --float-dur: 5.2s; --float-delay: 0s;">
+                <img src="avata.png" alt="" class="sticker-img sticker-avatar">
+            </div>
+            <!-- Project thumb: Nomia -->
+            <div class="sticker sticker-2" style="--rot: 4deg; --float-dur: 6.5s; --float-delay: 0.4s;">
+                <img src="nomia.png" alt="" class="sticker-img">
+            </div>
+            <!-- Project thumb: Growth -->
+            <div class="sticker sticker-3" style="--rot: -8deg; --float-dur: 7s; --float-delay: 0.8s;">
+                <img src="growth.png" alt="" class="sticker-img">
+            </div>
+            <!-- Project thumb: Real estate -->
+            <div class="sticker sticker-4" style="--rot: 5deg; --float-dur: 5.8s; --float-delay: 1s;">
+                <img src="realestate.png" alt="" class="sticker-img">
+            </div>
+            <!-- Project thumb: Vibeit -->
+            <div class="sticker sticker-5" style="--rot: -3deg; --float-dur: 6.2s; --float-delay: 0.6s;">
+                <img src="vibeit.png" alt="" class="sticker-img">
+            </div>
+            <!-- Decorative icon badge: Figma -->
+            <div class="sticker sticker-6 icon-badge" style="--rot: 8deg; --float-dur: 5s; --float-delay: 1.2s;">
+                <i class="bi bi-vector-pen"></i>
+            </div>
+            <!-- Decorative icon badge: Layout -->
+            <div class="sticker sticker-7 icon-badge" style="--rot: -5deg; --float-dur: 6.8s; --float-delay: 0.2s;">
+                <i class="bi bi-grid-1x2-fill"></i>
+            </div>
+            <!-- Decorative icon badge: Star -->
+            <div class="sticker sticker-8 icon-badge" style="--rot: 10deg; --float-dur: 5.5s; --float-delay: 1.5s;">
+                <i class="bi bi-stars"></i>
+            </div>
+            <!-- Decorative icon badge: Cursor -->
+            <div class="sticker sticker-9 icon-badge" style="--rot: -7deg; --float-dur: 6s; --float-delay: 0.9s;">
+                <i class="bi bi-cursor-fill"></i>
+            </div>
+            <!-- Avatar duplicate small -->
+            <div class="sticker sticker-10" style="--rot: 4deg; --float-dur: 7.2s; --float-delay: 0.3s;">
+                <img src="avata.png" alt="" class="sticker-img">
+            </div>
+        </div>
+
+        <!-- Hero center content -->
+        <div class="hero-content" id="hero-center">
+
+            <!-- Availability badge -->
+            <div class="avail-badge hero-reveal" style="--reveal-delay: 0.1s;"
+                aria-label="Actively looking for opportunities">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                ACTIVELY LOOKING FOR OPPORTUNITIES
+            </div>
+
+            <!-- Intro line -->
+            <p class="hero-intro hero-reveal" style="--reveal-delay: 0.25s;">Hey there. I am</p>
+
+            <!-- Giant name -->
+            <h1 class="hero-name hero-reveal" style="--reveal-delay: 0.4s;" aria-label="Asmaa Elsayed">
+                <span class="name-line">Asmaa</span>
+                <span class="name-line">Elsayed</span>
+            </h1>
+
+            <!-- Role label -->
+            <p class="hero-role hero-reveal" style="--reveal-delay: 0.6s;">UI/UX DESIGNER</p>
+
+            <!-- CTA button -->
+            <a href="#contact" class="cta-btn hero-reveal magnetic-btn" style="--reveal-delay: 0.8s;"
+                id="cta-get-in-touch">
+                Get in Touch <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+            </a>
+
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </section>
+
+
+    <!-- ============================================================
+     BENTO STATS — About / quick info grid
+     ============================================================ -->
+    <section class="bento-section reveal-section" id="about" aria-label="About information">
+        <div class="container-fluid bento-container">
+
+            <div class="bento-grid">
+
+                <!-- Based in -->
+                <div class="bento-card bento-location" id="bento-location">
+                    <p class="bento-label">Based in</p>
+                    <div class="bento-value-row">
+                        <i class="bi bi-geo-alt-fill bento-icon"></i>
+                        <span class="bento-value">Egypt</span>
+                    </div>
+                    <div class="bento-globe" aria-hidden="true">🌍</div>
+                </div>
+
+                <!-- Experience -->
+                <div class="bento-card bento-exp" id="bento-exp">
+                    <p class="bento-label">Experience</p>
+                    <span class="bento-value">Fresh Graduate</span>
+                    <div class="bento-tag">Ready to create</div>
+                </div>
+
+                <!-- Focus / Statement -->
+                <div class="bento-card bento-focus" id="bento-focus">
+                    <p class="bento-label">Focus</p>
+                    <span class="bento-value">Interaction<br>+ Visual Design</span>
+                </div>
+
+                <!-- Education -->
+                <div class="bento-card bento-edu" id="bento-edu">
+                    <p class="bento-label">Education</p>
+                    <span class="bento-value">Computer &amp;<br>Information Science</span>
+                </div>
+
+                <!-- Resume CTA -->
+                <div class="bento-card bento-resume" id="bento-resume">
+                    <p class="bento-label">Interested?</p>
+                    <a href="https://drive.google.com/file/d/11AegLs_ezIYNUETTDiBSWvNy1IjTgXvD/view?usp=drive_link"
+                        class="resume-btn" id="btn-resume" target="_blank">
+                        View Resume <i class="bi bi-download ms-2" aria-hidden="true"></i>
+                    </a>
+                    <div class="bento-deco" aria-hidden="true">✦</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+     BELIEF / SKILLS — Scattered pill skills
+     ============================================================ -->
+    <section class="belief-section reveal-section" id="skills" aria-label="Skills and beliefs">
+        <div class="container">
+
+            <div class="belief-header">
+                <p class="section-eyebrow">My approach</p>
+                <h2 class="belief-heading">I believe in</h2>
+                <p class="belief-subtext">Designing simple products that feel clear,<br class="d-none d-md-block">
+                    useful, and enjoyable.</p>
+            </div>
+
+            <!-- Scattered skill pills -->
+            <div class="skills-scatter" aria-label="Skill list">
+                <span class="skill-pill"
+                    style="--pill-rot: -3deg; --pill-x: 0px; --pill-y: 0px; --pill-delay: 0.1s;">Wireframes</span>
+                <span class="skill-pill"
+                    style="--pill-rot: 5deg; --pill-x: 20px; --pill-y: -10px; --pill-delay: 0.2s;">UX Audit</span>
+                <span class="skill-pill"
+                    style="--pill-rot: -6deg; --pill-x: -15px; --pill-y: 5px; --pill-delay: 0.3s;">Visual Design</span>
+                <span class="skill-pill"
+                    style="--pill-rot: 3deg; --pill-x: 10px; --pill-y: 8px; --pill-delay: 0.15s;">Design Systems</span>
+                <span class="skill-pill"
+                    style="--pill-rot: -4deg; --pill-x: -8px; --pill-y: -5px; --pill-delay: 0.25s;">Persona</span>
+                <span class="skill-pill"
+                    style="--pill-rot: 7deg; --pill-x: 5px; --pill-y: 12px; --pill-delay: 0.35s;">Task Flow</span>
+                <span class="skill-pill"
+                    style="--pill-rot: -2deg; --pill-x: -20px; --pill-y: 3px; --pill-delay: 0.4s;">Empathy</span>
+                <span class="skill-pill"
+                    style="--pill-rot: 4deg; --pill-x: 12px; --pill-y: -8px; --pill-delay: 0.18s;">Journey
+                    Mapping</span>
+                <span class="skill-pill"
+                    style="--pill-rot: -5deg; --pill-x: 0px; --pill-y: 10px; --pill-delay: 0.28s;">Micro
+                    Animations</span>
+                <span class="skill-pill"
+                    style="--pill-rot: 6deg; --pill-x: -10px; --pill-y: -3px; --pill-delay: 0.38s;">User Research</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+     PROJECTS — Large horizontal rows
+     ============================================================ -->
+    <section class="projects-section reveal-section" id="projects" aria-label="Portfolio projects">
+        <div class="container-fluid projects-container">
+
+            <div class="projects-header mb-5">
+                <p class="section-eyebrow">Selected work</p>
+                <h2 class="projects-heading">What I've been<br>working on recently</h2>
+            </div>
+
+            <!-- Project Row 1 -->
+            <a href="https://www.behance.net/gallery/248530441/Nomia-Solo-Female-Travel-App-UXUI-Case-Study"
+                class="project-row reveal-item" id="project-nomia" aria-label="Nomia Mobile App project"
+                target="_blank">
+                <div class="project-row-inner">
+                    <div class="project-meta">
+                        <span class="project-number">01</span>
+                        <span class="project-category">Mobile App</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Nomia Mobile App</h3>
+                        <p class="project-subtitle">Solo female travel planning experience</p>
+                    </div>
+                    <div class="project-thumb-wrap">
+                        <img src="nomia.png" alt="Nomia app preview" class="project-thumb">
+                    </div>
+                    <div class="project-arrow-wrap">
+                        <i class="bi bi-arrow-up-right project-arrow-icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project Row 2 -->
+            <a href="https://www.behance.net/gallery/244606335/Habitat-Real-Estate-CRM" class="project-row reveal-item"
+                id="project-habitat" aria-label="Habitat Dashboard project" target="_blank">
+                <div class="project-row-inner">
+                    <div class="project-meta">
+                        <span class="project-number">02</span>
+                        <span class="project-category">Dashboard</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Habitat Dashboard</h3>
+                        <p class="project-subtitle">Real estate CRM dashboard</p>
+                    </div>
+                    <div class="project-thumb-wrap">
+                        <img src="realestate.png" alt="Habitat dashboard preview" class="project-thumb">
+                    </div>
+                    <div class="project-arrow-wrap">
+                        <i class="bi bi-arrow-up-right project-arrow-icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project Row 3 -->
+            <a href="https://www.behance.net/gallery/244668603/VibeIt-Outdoor-Activity-UIUX-Case-Study"
+                class="project-row reveal-item" id="project-payo" aria-label="Payo Wallet project" target="_blank">
+                <div class="project-row-inner">
+                    <div class="project-meta">
+                        <span class="project-number">03</span>
+                        <span class="project-category">Case Study</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Vibeit</h3>
+                        <p class="project-subtitle">A sports discovery platform that connects you with activities.</p>
+                    </div>
+                    <div class="project-thumb-wrap">
+                        <img src="vibeit.png" alt="Payo wallet preview" class="project-thumb">
+                    </div>
+                    <div class="project-arrow-wrap">
+                        <i class="bi bi-arrow-up-right project-arrow-icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project Row 4 -->
+            <a href="https://www.behance.net/gallery/244097393/Growth-(Plant-Care-App-UX-Case-Study)"
+                class="project-row reveal-item" id="project-we" aria-label="My WE Redesign project" target="_blank">
+                <div class="project-row-inner">
+                    <div class="project-meta">
+                        <span class="project-number">04</span>
+                        <span class="project-category">UX Audit</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Growth</h3>
+                        <p class="project-subtitle">A plant care app that helps you keep your plants alive.</p>
+                    </div>
+                    <div class="project-thumb-wrap">
+                        <img src="growth.png" alt="My WE redesign preview" class="project-thumb">
+                    </div>
+                    <div class="project-arrow-wrap">
+                        <i class="bi bi-arrow-up-right project-arrow-icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+    <!-- <section class="testimonials-section reveal-section" id="testimonials" aria-label="Testimonials">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <p class="section-eyebrow">Kind words</p>
+                <h2 class="testimonials-heading">What do people<br>have to say</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-lg-4 col-md-6 reveal-item">
+                    <article class="testimonial-card" id="testi-1">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <p class="testimonial-text">Asmaa has an incredible eye for detail. Her ability to translate
+                            complex user flows into intuitive interfaces is remarkable for a fresh graduate.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">S</div>
+                            <div>
+                                <p class="author-name">Sarah M.</p>
+                                <p class="author-role">Senior Designer, Startup</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 reveal-item">
+                    <article class="testimonial-card" id="testi-2">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <p class="testimonial-text">Working with Asmaa was seamless. She deeply understands user needs
+                            and always brings fresh, thoughtful perspectives to every design challenge.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">K</div>
+                            <div>
+                                <p class="author-name">Karim A.</p>
+                                <p class="author-role">Product Manager, Tech Co.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 reveal-item">
+                    <article class="testimonial-card" id="testi-3">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <p class="testimonial-text">Her portfolio shows real depth — from research to visuals, Asmaa
+                            covers the full UX spectrum with consistency and care.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">L</div>
+                            <div>
+                                <p class="author-name">Laila H.</p>
+                                <p class="author-role">UX Lead, Agency</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- ============================================================
+     PERSONALITY — Big playful type + floating micro images
+     ============================================================ -->
+    <section class="personality-section reveal-section" id="contact" aria-label="Closing personality statement">
+
+        <!-- Floating micro stickers around text (mobile hidden) -->
+        <div class="personality-stickers" aria-hidden="true">
+            <div class="micro-sticker ms1"><img src="avata.png" alt=""></div>
+            <div class="micro-sticker ms2"><img src="nomia.png" alt=""></div>
+            <div class="micro-sticker ms3"><i class="bi bi-heart-fill"></i></div>
+            <div class="micro-sticker ms4"><img src="vibeit.png" alt=""></div>
+            <div class="micro-sticker ms5"><i class="bi bi-lightning-fill"></i></div>
+        </div>
+
+        <div class="personality-content">
+            <p class="personality-eyebrow">— That's all from me</p>
+            <blockquote class="personality-text reveal-item">
+                From pixels to case studies,<br>
+                I live for <em>clean interfaces,</em><br>
+                <em>smart systems,</em> and tiny<br>
+                interaction details.
+            </blockquote>
+
+            <div class="personality-cta reveal-item">
+                <a href="mailto:asmaa@design.com" class="cta-btn magnetic-btn" id="btn-email">
+                    Let's work together <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer class="site-footer" id="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <p class="footer-name">Asmaa Elsayed</p>
+                <p class="footer-copy">© 2024 — UI/UX Designer based in Egypt</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/asmaa-shapan/" class="footer-link" id="footer-linkedin"
+                        target="_blank">LinkedIn</a>
+                    <a href="https://www.behance.net/asmaashapan1" class="footer-link" id="footer-behance"
+                        target="_blank">Behance</a>
+                    <!-- <a href="#" class="footer-link" id="footer-dribbble">Dribbble</a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
