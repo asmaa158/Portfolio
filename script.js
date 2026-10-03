@@ -5,43 +5,9 @@ document.querySelectorAll(".tabs button").forEach((b,i)=>b.onclick=()=>{
   b.classList.add("active");
   const s=steps[i];
   document.querySelector("#stepContent").innerHTML='<h3>'+s.t+'</h3><p>'+s.p+'</p><h4>In this phase</h4><ul>'+s.l.map(x=>'<li>'+x+'</li>').join("")+'</ul>';
-  const v=document.querySelector("#processVideo source");
-  v.src="assets/video-"+(i+1)+".mp4";
-  const el=document.querySelector("#processVideo");
-  el.load();
-  el.play().catch(()=>{});
+  const source=document.querySelector("#processVideo source");
+  source.src="assets/video-"+(i+1)+".mp4";
+  const video=document.querySelector("#processVideo");
+  video.load();
+  video.play().catch(()=>{});
 });
-
-/* stacked section scroll motion */
-const stackSections=[...document.querySelectorAll(".hero,.service,.process,.work,.contact")];
-stackSections.slice(1).forEach(s=>s.classList.add("stack-shadow"));
-
-let ticking=false;
-function updateStackMotion(){
-  if(window.innerWidth<=800 || window.matchMedia("(prefers-reduced-motion: reduce)").matches){
-    stackSections.forEach(s=>s.style.transform="");
-    ticking=false;
-    return;
-  }
-  const vh=window.innerHeight;
-  stackSections.forEach((section,index)=>{
-    if(index===0) return;
-    const r=section.getBoundingClientRect();
-    const start=vh;
-    const end=vh*.62;
-    const p=Math.max(0,Math.min(1,(start-r.top)/(start-end)));
-    const y=(1-p)*42;
-    const scale=.988+(p*.012);
-    section.style.transform=`translateY(${y}px) scale(${scale})`;
-  });
-  ticking=false;
-}
-function requestStackUpdate(){
-  if(!ticking){
-    requestAnimationFrame(updateStackMotion);
-    ticking=true;
-  }
-}
-window.addEventListener("scroll",requestStackUpdate,{passive:true});
-window.addEventListener("resize",requestStackUpdate);
-requestStackUpdate();
