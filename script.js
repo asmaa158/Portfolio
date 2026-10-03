@@ -11,3 +11,13 @@ document.querySelectorAll(".tabs button").forEach((b,i)=>b.onclick=()=>{
   video.load();
   video.play().catch(()=>{});
 });
+
+/* Build a proper sticky viewport for every main section. */
+const sections=[...document.querySelectorAll("main > section")];
+sections.forEach((section,index)=>{
+  const wrap=document.createElement("div");
+  wrap.className="stack-wrap";
+  wrap.style.zIndex=String(index+1);
+  section.parentNode.insertBefore(wrap,section);
+  wrap.appendChild(section);
+});
